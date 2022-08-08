@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  color: #000;
+  overflow: hidden;
+  color: #fff;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+img {
+  background: transparent;
+}
+
+h1,
+p {
+  margin-top: 0.333rem;
+  margin-bottom: 0.333rem;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+@keyframes slide-transparency {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animate-opacity {
+  animation-name: slide-transparency;
+  animation-iteration-count: infinite;
+}
+
+.freq-5 {
+  animation-duration: 5s;
+}
+
+.freq-6 {
+  animation-duration: 6.33s;
+}
+
+.freq-7 {
+  animation-duration: 7s;
+}
+
+.freq-8 {
+  animation-duration: 8.88s;
+}
+
+.freq-9 {
+  animation-duration: 9s;
+}
+
+.freq-10 {
+  animation-duration: 10.17s;
+}
+
+.delay-2 {
+  animation-delay: 1.33s;
+}
+
+.delay-4 {
+  animation-delay: 2.11s;
+}
+
+.bg {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  z-index: -1000;
+}
+
+.rotate-1 {
+  transform: rotate(218deg) translate(-10vw, -120vh);
+}
+
+.rotate-2 {
+  transform: rotate(70deg) translate(0px, -120vh);
+}
+
+.tile {
+  overflow: hidden;
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 300vw;
+  background-repeat: repeat;
+  background-size: 512px 512px;
+}
+
+.top-left {
+  background-image: url("./img/topleft.png");
+}
+
+.top-right {
+  background-image: url("./img/topright.png");
+}
+
+.bottom-left {
+  background-image: url("./img/bottomleft.png");
+}
+
+.bottom-right {
+  background-image: url("./img/bottomright.png");
+}
