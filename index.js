@@ -12,7 +12,7 @@ document.addEventListener("mousemove", function (e) {
   y = e.pageY;
 });
 
-function animation() {
+requestAnimationFrame(function animation() {
   z1.style.transform = "translate(" + x * ratio + "px," + y * ratio + "px)";
 
   z2.style.transform =
@@ -28,6 +28,6 @@ function animation() {
     "px," +
     (y * ratio) / 3 +
     "px) rotate(71deg)";
-}
 
-setInterval(animation, 30);
+  requestAnimationFrame(animation);
+});
